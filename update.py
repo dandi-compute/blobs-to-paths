@@ -11,7 +11,7 @@ def update():
 
     client = dandi.dandiapi.DandiAPIClient()
     dandisets = list(client.get_dandisets())
-    for dandiset in dandisets[:3]:
+    for dandiset in dandisets:
         dandiset_id = dandiset.identifier
 
         assets = dandiset.get_assets()
